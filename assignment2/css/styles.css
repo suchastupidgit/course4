@@ -2,6 +2,8 @@
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -15,37 +17,37 @@ h1 {
   font-size: 175%;
 }
 
-.box {
-  padding: 40px 4px 4px 4px;
-  text-align: left;
-  
+section {
+  margin: 10px;
   border: 1px solid black;
-  position: relative;
   background-color: blanchedalmond;
-  margin: 2% 1% 1% 1%;
+  position: relative;
 }
 
-.title {
-  text-align: center;
-  width: 150px;
-  color: black;
-  border: 1px solid black;
-  position: absolute;
-  right: -1px;
-  top: -1px;
-  padding: 2px 2px 2px 2px;
+p {
+	padding: 10px;
+}
+
+.title{
+	width: 150px;
+	text-align: center;
+	margin-right: 0;
+	margin-left: auto;
+	padding: 5px;
+	border-left: 1px solid black;
+	border-bottom: 1px solid black;
   font-size: 125%;
 }
 
-#p1.title {
+#p1 {
   background-color: palevioletred
 }
 
-#p2.title {
+#p2 {
   background-color: lightseagreen
 }
 
-#p3.title {
+#p3 {
   background-color: dodgerblue;
 }
 
@@ -58,7 +60,7 @@ h1 {
 @media (min-width: 992px) {
   .col-lg-4 {
     float: left;
-    width: 31.33%;
+    width: 33.33%;
   }
 }
 
@@ -66,14 +68,14 @@ h1 {
 @media (min-width: 768px) and (max-width: 991px) {
   #c1.col-md-6 {
     float: left;
-    width: 48%;
+    width: 50%;
   }
   #c2.col-md-6 {
     float: left;
-    width: 48%;
+    width: 50%;
   }
   #c3.col-md-6 {
     float: left;
-    width: 98%;
+    width: 100%;
   }
 }
